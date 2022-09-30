@@ -1,11 +1,20 @@
 <template>
 	<div class="welcome container">
 		<p>Welcome</p>
+		<Signup />
+		<Login />
 	</div>
 </template>
 
 <script>
-	export default {}
+	import Signup from "../components/Signup.vue"
+	import Login from "../components/Login.vue"
+	export default {
+		components: {
+			Signup,
+			Login,
+		},
+	}
 </script>
 
 <style scoped>
